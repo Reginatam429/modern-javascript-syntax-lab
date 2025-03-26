@@ -70,7 +70,7 @@ const morePizzaToppings = ['Cheese', 'Sauce'];
 
 // Your code here:
 
-uncontroversialPizzaToppings = [...morePizzaToppings];
+const uncontroversialPizzaToppings = [...morePizzaToppings];
 
 //console.log(uncontroversialPizzaToppings);
 
@@ -95,4 +95,61 @@ const anotherCar = {
 const myCar = {...anotherCar};
 
 // console.log(myCar);
+
+// ! Exercise 6:
+// a. Define a variable named `propertyName` and assign a string (like 
+//    'username', 'age', or 'email') to it.
+// 
+// b. Create an object named `userProfile`. 
+// 
+// c. Use `propertyName` as a dynamic key in `userProfile`. Assign it a 
+//    relevant value.
+//
+// d. Console log the `userProfile` object to see the result.
+//
+// Your code here:
+
+const propertyName = "username";
+
+const userProfile = {};
+
+userProfile[propertyName] = "Reginatam";
+
+// console.log(userProfile);
+
+// ! Exercise 8:
+// a. Create a function with two parameters, `noun` and `adjective`.
+// 
+// b. Give `noun` a default value of "cat" and `adjective` a default value of 
+//    "orange".
+//
+// c. The function should log a sentence 'The cat is orange.' by default, but 
+//    should substitute the appropriate parameters when it is supplied with 
+//    arguments.
+//
+// Your code here:
+
+function orangeCat(noun = 'cat', adjective = 'orange') {
+    return `The ${noun} is ${adjective}`;
+}
+
+// console.log(orangeCat());
+
+// ! Exercise 9:
+// a. Convert the following `if...else` statement into a ternary:
+//
+//    if (pizza === 'tasty') {
+//      console.log('yum');
+//    } else {
+//      console.log('yuck');
+//    }
+//
+// Starting code (don't modify this):
+
+const pizza = 'tasty';
+
+// Your code here:
+
+let pizzaFlavor = pizza ? "tasty" : "yuck";
+// console.log(pizzaFlavor);
 
